@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" />
+
   <title>Rochelle Bradley | Frontend Web Developer</title>
 </head>
 
@@ -48,7 +49,7 @@
     <!-- about me -->
     <section id="about-section" class="page-section">
       <div class="container">
-        <h4 class="section-header">About <span class="purple-text">me</span></h4>
+        <h4 class="section-header">About <span class="blurple-text">me</span></h4>
         <a class="anchor" name="about"></a>
       </div>
       <p>By day I am an ISTQB qualified QA Engineer, working in an agile environment as part of a fantastic development
@@ -62,59 +63,82 @@
     <!-- portfolio container -->
     <section id="portfolio" class="page-section">
       <div class="container">
-        <h4 class="section-header">Some of my <span class="purple-text">projects</span></h4>
         <a class="anchor" name="projects"></a>
+        <h4 class="section-header">Some of my <span class="blurple-text">work</span></h4>
+        <p>In this section you can some of the work I have completed since starting my bootcamp journey.
+          From basic landing pages to this very portfolio page, I have learnt so many new skills and cannot wait to learn more.</p>
       </div>
-      <!-- <section id="portfolio-grid">
-        <div id="horiseon" class="project-grid-area">
-          <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" title="Horiseon - deployed project">
-            <p class="project-info">Horiseon Code Refactor - Bootcamp Week 1 Challenge</p>
-          </a>
-        </div>
-        <div id="cssCheatsheet" class="project-grid-area">
-          <div class="project-info">CSS Cheatsheet</div>
-        </div>
-        <div id="cssGrid" class="project-grid-area">
-          <div class="project-info">CSS Grid Activity</div>
-        </div>
-        <div id="landingPage" class="project-grid-area">
-          <div class="project-info">Basic Landing Page</div>
-      </div>
-      <div id="studentBio" class="project-grid-area">
-        <div class="project-info">Simple Student Bio</div>
-      </div>
-    </section> -->
+    <!-- projects grid -->
     <section class="card-grid">
       <section class="card">
-        <a href="https://www.facebook.com" title="horiseon deployed page"><img src="assets/images/horiseon-homepage-screenshot.jpg" alt="horiseon website screenshot"></a>
-          <h4 class="card-header">Flexbox Row</h4>
-          <p>Use these three properties to create a Flexbox row layout</p>
+        <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" target="_blank" title="horiseon deployed page"><img src="assets/images/horiseon-homepage-screenshot.jpg" alt="horiseon website screenshot"></a>
+          <h4 class="card-header">Horiseon refactor - Bootcamp week 1 challenge</h4>
+          <div class="github-links">
+            <a href="https://github.com/rbrd87/bootcamp-week-1-challenge" target="_blank" class="link-details">
+                <i class="mdi mdi-github"></i> GitHub Repo
+            </a>
+            <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" target="_blank" class="link-details">
+                <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
+            </a>
+        </div>
       </section>
       <section class="card">
-        <a href="https://www.facebook.com"><img src="assets/images/horiseon-homepage-screenshot.png" alt="horiseon website screenshot"></a>
-        <h4 class="card-header">Flexbox Row</h4>
-        <p>Use these three properties to create a Flexbox row layout</p>
+        <a href="https://rbrd87.github.io/mini-project-css-cheat-sheet/" target="_blank"><img src="assets/images/cheatsheet.jpg" alt="css cheatsheet screenshot"></a>
+        <h4 class="card-header">CSS Cheatsheet</h4>
+        <div class="github-links">
+          <a href="https://github.com/rbrd87/mini-project-css-cheat-sheet" target="_blank" class="link-details">
+              <i class="mdi mdi-github"></i> GitHub Repo
+          </a>
+          <a href="https://rbrd87.github.io/mini-project-css-cheat-sheet/" target="_blank" class="link-details">
+              <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
+          </a>
+      </div>
       </section>
       <section class="card">
-        <a href="https://www.facebook.com"><img src="assets/images/horiseon-homepage-screenshot.png" alt="horiseon website screenshot"></a>
-        <h4 class="card-header">Flexbox Row</h4>
-        <p>Use these three properties to create a Flexbox row layout</p>
+        <a href="https://rbrd87.github.io/css-grids-activity/" target="_blank"><img src="assets/images/css-grid.jpg" alt="furniture website screenshot"></a>
+        <h4 class="card-header">Furniture store homepage</h4>
+        <div class="github-links">
+          <a href="https://github.com/rbrd87/css-grids-activity" target="_blank" class="link-details">
+              <i class="mdi mdi-github"></i> GitHub Repo
+          </a>
+          <a href="https://rbrd87.github.io/css-grids-activity/" target="_blank" class="link-details">
+              <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
+          </a>
+      </div>
       </section>
       <section class="card">
-        <a href="https://www.facebook.com"><img src="assets/images/horiseon-homepage-screenshot.png" alt="horiseon website screenshot"></a>
-        <h4 class="card-header">Flexbox Row</h4>
-        <p>Use these three properties to create a Flexbox row layout</p>
+        <a href="https://rbrd87.github.io/jakes-eatery/" target="_blank"><img src="assets/images/jakes-eatery.jpg" alt="jakes eatery website screenshot"></a>
+        <h4 class="card-header">Jakes Eatery - Online menu</h4>
+        <div class="github-links">
+          <a href="https://github.com/rbrd87/jakes-eatery" target="_blank" class="link-details">
+              <i class="mdi mdi-github"></i> GitHub Repo
+          </a>
+          <a href="https://rbrd87.github.io/jakes-eatery/" target="_blank" class="link-details">
+              <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
+          </a>
+      </div>
       </section>
       <section class="card">
-        <a href="https://www.facebook.com"><img src="assets/images/horiseon-homepage-screenshot.png" alt="horiseon website screenshot"></a>
-        <h4 class="card-header">Flexbox Row</h4>
-        <p>Use these three properties to create a Flexbox row layout</p>
-      </section>
-      <!-- contact -->
-      <section class="page-section" id="contact">
-        <h4>Contact Me</h4>
+        <a href="https://rbrd87.github.io/landing-page/" target="_blank"><img src="assets/images/landing-page.jpg" alt="landing page screenshot"></a>
+        <h4 class="card-header">Basic landing page</h4>
+        <div class="github-links">
+          <a href="https://github.com/rbrd87/landing-page" target="_blank" class="link-details">
+              <i class="mdi mdi-github"></i> GitHub Repo
+          </a>
+          <a href="https://rbrd87.github.io/landing-page/" target="_blank" class="link-details">
+              <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
+          </a>
+      </div>
       </section>
     </section>
+
+      <!-- contact -->
+      <section class="page-section" id="contact">
+        <div class="container">
+          <h4 class="section-header">Get in <span class="blurple-text">touch</span></h4>
+          <a class="anchor" name="projects"></a>
+        </div>
+      </section>
   </main>
 </body>
 

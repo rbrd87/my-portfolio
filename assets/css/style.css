@@ -26,7 +26,8 @@ html {
 
 /* Base styles */
 body {
-  font-size: 1.6rem; /* 16px */
+  font-size: 1.6rem;
+  /* 16px */
   line-height: 1.4;
   margin: 0;
   padding: 0;
@@ -99,11 +100,11 @@ img {
 
 @media (max-width: 28.75em) {
   .navbar {
-      justify-content: center;
+    justify-content: center;
   }
 
   .nav-list {
-      margin: 0 1rem;
+    margin: 0 1rem;
   }
 }
 
@@ -190,65 +191,6 @@ img {
 
 /* portfolio grid */
 
-/* #portfolio-grid {
-  max-width: 90%;
-  margin: 0 auto;
-  display: grid;
-  min-height: 500px;
-  height: 100vh;
-  grid-template-rows: 40% 30% 30%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "horiseon horiseon"
-  "cssCheatsheet cssGrid"
-  "landingPage studentBio";
-}
-
-.project-grid-area {
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 15px;
-  display: grid;
-  align-content: end;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.project-info {
-  cursor: pointer;
-  background-color: var(--dark-grey);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 1.8rem;
-  border-bottom: 4px solid var(--blurple);
-}
-
-#horiseon {
-  grid-area: horiseon;
-  background-image: url("../images/horiseon-homepage-screenshot.png");
-}
-
-#cssCheatsheet {
-  grid-area: cssCheatsheet;
-  background-image: url("../images/profile-pic.jpeg");
-}
-
-#cssGrid {
-  grid-area: cssGrid;
-  background-image: url("../images/profile-pic.jpeg");
-}
-
-#landingPage {
-  grid-area: landingPage;
-  background-image: url("../images/profile-pic.jpeg");
-}
-
-#studentBio {
-  grid-area: studentBio;
-  background-image: url("../images/profile-pic.jpeg");
-} */
-
 /* Card Styling - Dashed border around the edge */
 .card-grid {
   display: flex;
@@ -260,12 +202,20 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 0 1rem 1rem 1rem;
   margin: 2rem 0.5rem;
   min-width: 100px;
   width: 45%;
   background-color: var(--dark-grey);
+}
+
+.card img {
+  padding: 1rem 0 0 0;
+  width: 100%;
+  height: auto;
 }
 
 .card:first-child {
@@ -281,32 +231,32 @@ img {
   border-bottom: 2px solid var(--blurple);
   padding: 0 1rem 1rem 1rem;
   text-align: center;
-
+  width: fit-content;
 }
 
-/* Changed the colour, size and alignment of the <p> tag in the card section */
-.card p {
-  color: var(--white);
-  font-size: 13px;
-  text-align: center;
-  padding: 1rem 0;
+.github-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  flex-wrap: wrap;
 }
 
-.card img {
-  padding: 1rem 0 0 0;
-  max-height: 250px;
-}
-
-.card:first-child img {
-  max-height: 450px;
+.link-details {
+  color: var(--light-grey);;
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.8rem;
 }
 
 /* Added a transition effect when the cards/card-header loads */
-.card, .card-header{
+.card,
+.card-header {
   transition: all 0.5s ease-in-out;
 }
 
 /* Box shadow for when the user hovers over the card/card-header */
-.card:hover, .card:hover .card-header {
+.card:hover,
+.card:hover .card-header {
   box-shadow: 0px 0px 10px var(--turquoise);
 }
