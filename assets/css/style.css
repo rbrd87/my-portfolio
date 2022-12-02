@@ -173,13 +173,14 @@ img {
   color: var(--blurple);
 }
 
+/* ccs trick to ensure that the fixed navbar didn't cover the section headers */
 .container {
   position: relative;
 }
 
 .anchor {
   position: absolute;
-  top: -70px; /* given the fixed header is 50px tall, and you want 15px padding */
+  top: -70px;
   left: 0px;
 }
 
@@ -200,45 +201,46 @@ img {
 }
 
 .project-grid-area {
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 15px;
   cursor: pointer;
   display: grid;
   align-content: end;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.heading {
+.project-info {
   background-color: var(--dark-grey);
   padding: 15px;
   height: 25px;
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   border-bottom: 4px solid var(--blurple);
 }
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("assets/images/profile-pic.jpeg");
-
+  background-image: url("../images/horiseon-homepage-screenshot.png");
 }
+
 #cssCheatsheet {
   grid-area: cssCheatsheet;
-  background-image: url("assets/images/profile-pic.jpeg");
+  background-image: url("../images/profile-pic.jpeg");
 }
 
 #cssGrid {
   grid-area: cssGrid;
-  background-image: url("assets/images/profile-pic.jpeg");
+  background-image: url("../images/profile-pic.jpeg");
 }
 
 #landingPage {
   grid-area: landingPage;
-  background-image: url("../images/patio@2x.png");
+  background-image: url("../images/profile-pic.jpeg");
 }
 
 #studentBio {
   grid-area: studentBio;
-  background-image: url("../images/desks@2x.png");
+  background-image: url("../images/profile-pic.jpeg");
 }
