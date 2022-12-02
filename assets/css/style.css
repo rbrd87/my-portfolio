@@ -4,7 +4,6 @@
   --dark-grey: #272727;
   --grey: #404040;
   --light-grey: #979797;
-  --purple: #853fed;
   --blurple: #6a5df8;
   --blue: #00a3e9;
   --background-dark: #151418;
@@ -26,8 +25,7 @@ html {
 
 /* Base styles */
 body {
-  font-size: 1.6rem;
-  /* 16px */
+  font-size: 1.6rem; /* 16px */
   line-height: 1.4;
   margin: 0;
   padding: 0;
@@ -105,7 +103,7 @@ img {
 }
 
 .nav-list a:hover {
-  color: var(--blue);
+  color: var(--blurple);
 }
 
 /* hero section */
