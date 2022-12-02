@@ -83,11 +83,11 @@ img {
   width: 100%;
   background: var(--background-dark);
   border-bottom: 2px solid var(--blurple);
-  z-index: 10;
+  z-index: 1;
 }
 
 .nav-title {
-  font-family: 'Azeret Mono', serif;
+  font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
   font-size: 5rem;
   font-weight: 700;
   margin-left: 2rem;
@@ -96,16 +96,6 @@ img {
 .nav-list {
   display: flex;
   margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .navbar {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
 }
 
 .nav-list a {
@@ -143,14 +133,14 @@ img {
 }
 
 .hero-text p {
-  max-width: 350px;
+  max-width: 35rem;
   font-size: 1.4rem;
   font-weight: 400;
 }
 
 .hero-img img {
   margin-top: 7rem;
-  max-width: 150px;
+  max-width: 15rem;
   height: auto;
   border-radius: 50%;
   outline: 2px solid var(--white);
@@ -162,7 +152,6 @@ img {
   max-width: 90%;
   text-align: left;
   padding: 5rem 0 0 0;
-  background: var(--main-blue);
   margin: 0 auto;
 }
 
@@ -237,26 +226,65 @@ img {
 .github-links {
   display: flex;
   justify-content: center;
-  width: 100%;
-  max-width: 980px;
   flex-wrap: wrap;
 }
 
 .link-details {
-  color: var(--light-grey);;
+  color: var(--light-grey);
+  ;
   display: inline-block;
   padding: 0 1rem;
   font-size: 1.8rem;
 }
 
+.link-details:hover {
+  color: var(--white);
+}
+
 /* Added a transition effect when the cards/card-header loads */
-.card,
-.card-header {
+.card {
   transition: all 0.5s ease-in-out;
 }
 
 /* Box shadow for when the user hovers over the card/card-header */
-.card:hover,
-.card:hover .card-header {
-  box-shadow: 0px 0px 10px var(--turquoise);
+.card:hover {
+  box-shadow: 0 0 1rem var(--white);
+}
+
+/* contact section */
+
+.contact-links {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  color: var(--white);
+  display: inline-block;
+  padding: 5rem 5rem 5rem 0;
+  font-size: 2.2rem;
+}
+
+.contact-details:hover {
+  color: var(--blurple)
+}
+
+/* footer section */
+
+footer {
+  border-top: 3px solid var(--blurple);
+  color: var(--white);
+  padding: 3rem;
+  background: var(--dark-grey);
+}
+
+footer p {
+  padding: 0.5rem 0px;
+  font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 0.2rem;
 }
