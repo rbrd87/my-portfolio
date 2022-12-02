@@ -47,6 +47,10 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 2rem;
+}
+
 ul {
   list-style: none;
 }
@@ -186,7 +190,7 @@ img {
 
 /* portfolio grid */
 
-#portfolio-grid {
+/* #portfolio-grid {
   max-width: 90%;
   margin: 0 auto;
   display: grid;
@@ -205,13 +209,13 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 15px;
-  cursor: pointer;
   display: grid;
   align-content: end;
   border-radius: 1rem 1rem 0 0;
 }
 
 .project-info {
+  cursor: pointer;
   background-color: var(--dark-grey);
   padding: 15px;
   height: 25px;
@@ -243,4 +247,66 @@ img {
 #studentBio {
   grid-area: studentBio;
   background-image: url("../images/profile-pic.jpeg");
+} */
+
+/* Card Styling - Dashed border around the edge */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem 1rem 1rem;
+  margin: 2rem 0.5rem;
+  min-width: 100px;
+  width: 45%;
+  background-color: var(--dark-grey);
+}
+
+.card:first-child {
+  width: 95%;
+}
+
+/* Styling for the header of the card, making the position sit on the card border */
+.card-header {
+  position: relative;
+  margin: 1rem 0;
+  z-index: 1;
+  color: var(--white);
+  border-bottom: 2px solid var(--blurple);
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+
+}
+
+/* Changed the colour, size and alignment of the <p> tag in the card section */
+.card p {
+  color: var(--white);
+  font-size: 13px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.card img {
+  padding: 1rem 0 0 0;
+  max-height: 250px;
+}
+
+.card:first-child img {
+  max-height: 450px;
+}
+
+/* Added a transition effect when the cards/card-header loads */
+.card, .card-header{
+  transition: all 0.5s ease-in-out;
+}
+
+/* Box shadow for when the user hovers over the card/card-header */
+.card:hover, .card:hover .card-header {
+  box-shadow: 0px 0px 10px var(--turquoise);
 }
