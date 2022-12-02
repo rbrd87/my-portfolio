@@ -5,6 +5,7 @@
   --grey: #404040;
   --light-grey: #979797;
   --purple: #853fed;
+  --blurple: #6a5df8;
   --blue: #00a3e9;
   --background-dark: #151418;
 }
@@ -61,11 +62,10 @@ img {
   width: 100%;
 }
 
-.purple-text {
-  color: var(--purple);
+.blurple-text {
+  color: var(--blurple);
   font-weight: 500;
 }
-
 
 /* nav */
 
@@ -77,16 +77,15 @@ img {
   left: 0;
   width: 100%;
   background: var(--background-dark);
-  border-bottom: 2px solid var(--purple);
+  border-bottom: 2px solid var(--blurple);
   z-index: 10;
 }
 
-.nav-logo {
-  margin-top: 1rem;
+.nav-title {
+  font-family: 'Azeret Mono', serif;
+  font-size: 5rem;
+  font-weight: 700;
   margin-left: 2rem;
-  max-height: 50px;
-  width: auto;
-  background-size: cover;
 }
 
 .nav-list {
@@ -118,7 +117,7 @@ img {
 
 .hero-banner {
   display: flex;
-  height: 40vh;
+  height: 50vh;
   justify-content: space-between;
   align-items: center;
   text-align: right;
@@ -127,16 +126,11 @@ img {
   background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 0.8)), url("../images/geometric-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 7rem;
   padding: 0 10rem;
 }
 
 .hero-text {
-  max-width: 350px;
-}
-
-.hero-text h2 {
-  font-weight: 500;
+  margin-top: 7rem;
 }
 
 .hero-text h3 {
@@ -144,36 +138,107 @@ img {
 }
 
 .hero-text p {
+  max-width: 350px;
   font-size: 1.4rem;
-  font-weight: 300;
-  margin: 10px -5px;
+  font-weight: 400;
 }
 
 .hero-img img {
+  margin-top: 7rem;
   max-width: 150px;
   height: auto;
   border-radius: 50%;
   outline: 2px solid var(--white);
 }
 
-/* about me section */
-.about-section {
-  max-width: 85%;
+/* section styling / anchors / headers */
+
+.page-section {
+  max-width: 90%;
   text-align: left;
-  padding: 5rem;
+  padding: 5rem 0 0 0;
   background: var(--main-blue);
   margin: 0 auto;
 }
 
-.about-section-header {
-  position: relative;
+.section-header {
   line-height: 1.2em;
   font-size: 3.6rem;
   margin: 0 auto 2.5rem 0;
 }
 
-.about-section-header::before {
+.section-header::before {
   content: "|";
   margin-right: 2rem;
-  color: var(--purple);
+  color: var(--blurple);
+}
+
+.container {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: -70px; /* given the fixed header is 50px tall, and you want 15px padding */
+  left: 0px;
+}
+
+/* portfolio grid */
+
+#portfolio-grid {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  min-height: 500px;
+  height: 100vh;
+  grid-template-rows: 40% 30% 30%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "horiseon horiseon"
+  "cssCheatsheet cssGrid"
+  "landingPage studentBio";
+}
+
+.project-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: var(--dark-grey);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 4px solid var(--blurple);
+}
+
+#horiseon {
+  grid-area: horiseon;
+  background-image: url("assets/images/profile-pic.jpeg");
+
+}
+#cssCheatsheet {
+  grid-area: cssCheatsheet;
+  background-image: url("assets/images/profile-pic.jpeg");
+}
+
+#cssGrid {
+  grid-area: cssGrid;
+  background-image: url("assets/images/profile-pic.jpeg");
+}
+
+#landingPage {
+  grid-area: landingPage;
+  background-image: url("../images/patio@2x.png");
+}
+
+#studentBio {
+  grid-area: studentBio;
+  background-image: url("../images/desks@2x.png");
 }
