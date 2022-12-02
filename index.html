@@ -6,43 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" />
   <title>Rochelle Bradley | Frontend Web Developer</title>
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1 class="page-title">rbrd87</h1>
-    <nav class="nav-bar">
-      <a href="#about">About Me</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- START NAV -->
+  <nav id="navbar" class="navbar">
+    <img src="assets/images/logo.png" alt="logo" class="nav-logo">
+    <ul class="nav-list">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- END NAV -->
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div class="hero-img">
-      <img src="assets/images/profile-pic.jpeg" alt="picture of rochelle bradley">
+      <a href="#"><img src="assets/images/profile-pic.jpeg" alt="picture of rochelle bradley" class="profile-pic"></a>
     </div>
     <div class="hero-text">
       <h2>Hi, I'm Rochelle</h2>
       <h3>Frontend Web Developer</h3>
+      <p>Learning HTML, CSS, JQuery & React skills through a skills for life bootcamp</p>
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h4>About Me</h4>
-      <p>These are some words about me that I will use when talking about myself and adding pictures</p>
+    <section id="about" class="about-section">
+        <h4 class="about-section-header">About <span class="purple-text">Me</span></h4>
+        <p>By day I am an ISTQB qualified QA Engineer, working in an agile environment as part of a fantastic development team. 
+          By night I am a student of the Trilogy Skills Bootcamp in Front-End Web Development, where I am expanding my skills by 
+          learning HTML, CSS, Javascript, jQuery, React.js, Node, and much more.  This is a little portfolio page to show off what I've been learning and to put it all into practice.</p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="portfolio">
       <h4>Portfolio</h4>
-      Here is my portfolio
     </section>
 
     <!-- contact -->
