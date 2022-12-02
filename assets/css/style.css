@@ -5,7 +5,6 @@
   --grey: #404040;
   --light-grey: #979797;
   --blurple: #6a5df8;
-  --blue: #00a3e9;
   --background-dark: #151418;
 }
 
@@ -74,7 +73,7 @@ img {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   left: 0;
@@ -189,7 +188,6 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 1rem 1rem 1rem;
@@ -221,12 +219,6 @@ img {
   width: fit-content;
 }
 
-.github-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .link-details {
   color: var(--light-grey);
   ;
@@ -250,12 +242,6 @@ img {
 }
 
 /* contact section */
-
-.contact-links {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
 
 .contact-details {
   color: var(--white);
