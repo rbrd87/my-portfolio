@@ -115,10 +115,12 @@ img {
   text-align: right;
   overflow: hidden;
   background: var(--background-dark);
-  background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 0.8)), url("../images/geometric-background.jpg");
+  background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 1)), url("../images/geometric-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10rem;
+  max-width: 200rem;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -137,7 +139,7 @@ img {
 
 .hero-img img {
   margin-top: 7rem;
-  max-width: 15rem;
+  max-width: 20rem;
   height: auto;
   border-radius: 50%;
   outline: 2px solid var(--white);
@@ -145,17 +147,20 @@ img {
 
 /* section styling / anchors / headers */
 
+.page-wrapper {
+  max-width: 200rem;
+  margin: 0 auto;
+}
+
 .page-section {
-  max-width: 90%;
   text-align: left;
   padding: 5rem 0 0 0;
-  margin: 0 auto;
 }
 
 .section-header {
   line-height: 1.2em;
   font-size: 3.6rem;
-  margin: 0 auto 2.5rem 0;
+  margin: 0 100rem 2.5rem 0;
 }
 
 .section-header::before {
