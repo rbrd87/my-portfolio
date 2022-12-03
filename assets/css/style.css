@@ -80,7 +80,7 @@ img {
   width: 100%;
   background: var(--background-dark);
   border-bottom: 2px solid var(--blurple);
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav-title {
@@ -261,6 +261,10 @@ img {
 
 .contact-details:hover {
   color: var(--blurple)
+}
+
+.contact-links {
+  margin: 0 5rem ;
 }
 
 /* footer section */
