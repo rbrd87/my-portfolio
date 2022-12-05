@@ -1,3 +1,4 @@
+/* variables for repeating colors etc */
 :root {
   --dark: #151418;
   --white: #f6f6f6;
@@ -6,13 +7,14 @@
   --light-grey: #979797;
   --blurple: #6a5df8;
   --background-dark: #151418;
+  --monospace: 'Azeret Mono', 'Courier New', Courier, monospace;
 }
 
-/* Base reset */
+/* base reset */
 * {
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: 400; /* setting default font weight */
 }
 
 /* 62.5% of 16px browser font size is 10px - Can now use this for easy rem calculations */
@@ -22,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Base styles */
+/* base styles */
 body {
   font-size: 1.6rem; /* 16px */
   line-height: 1.4;
@@ -33,35 +35,14 @@ body {
   color: var(--white);
 }
 
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
 ul {
-  list-style: none;
+  list-style: none; /* removes the bullet points */
 }
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: var(--white);
   cursor: pointer;
-}
-
-img {
-  display: block;
-  width: 100%;
 }
 
 .blurple-text {
@@ -70,21 +51,20 @@ img {
 }
 
 /* nav */
-
 .navbar {
   display: flex;
-  justify-content: space-around;
-  position: fixed;
+  justify-content: space-between;
+  position: fixed; /* keeps the navbar at the top as you scroll */
   top: 0;
   left: 0;
   width: 100%;
   background: var(--background-dark);
   border-bottom: 2px solid var(--blurple);
-  z-index: 100; /* so that the navbar always stays ontop of the content */
+  z-index: 10; /* so that the navbar always stays ontop of the content */
 }
 
 .nav-title {
-  font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
+  font-family: var(--monospace);
   font-size: 5rem;
   font-weight: 700;
   margin-left: 2rem;
@@ -106,20 +86,18 @@ img {
 }
 
 /* hero section */
-
 .hero-banner {
   display: flex;
-  height: 50vh;
-  justify-content: space-between;
+  height: 40vh;
+  justify-content: space-around;
   align-items: center;
   text-align: right;
-  overflow: hidden;
   background: var(--background-dark);
   background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 1)), url("../images/geometric-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10rem;
-  max-width: 200rem;
+  max-width: 200rem; /* stops the banner stretching too far on ultrawide monitors like mine */
   margin: 0 auto;
 }
 
@@ -139,14 +117,13 @@ img {
 
 .hero-img img {
   margin-top: 7rem;
-  max-width: 20rem;
+  max-width: 20rem; /* stops the image getting too big */
   height: auto;
   border-radius: 50%;
   outline: 2px solid var(--white);
 }
 
 /* section styling / anchors / headers */
-
 .page-wrapper {
   max-width: 200rem;
   margin: 0 auto;
@@ -154,7 +131,7 @@ img {
 
 .page-section {
   text-align: left;
-  padding: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 
 .page-section p, h4{
@@ -166,14 +143,14 @@ img {
   font-size: 3.6rem;
   margin: 0 0 2.5rem 0;
 }
-
+ /* little decoration for the section headers */
 .section-header::before {
   content: "|";
   margin-right: 2rem;
   color: var(--blurple);
 }
 
-/* ccs trick to ensure that the fixed navbar didn't cover the section headers */
+/* ccs trick to ensure that the fixed navbar didn't cover the section headers when clicking the link */
 .container {
   position: relative;
 }
@@ -185,8 +162,6 @@ img {
 }
 
 /* portfolio grid */
-
-/* Card Styling - Dashed border around the edge */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -204,6 +179,7 @@ img {
   min-width: 350px;
   width: 45%;
   background-color: var(--dark-grey);
+  transition: all 0.5s ease-in-out; /* Added a transition effect when the cards/card-header loads */
 }
 
 .card img {
@@ -211,12 +187,12 @@ img {
   width: 100%;
   height: auto;
 }
-
+ /* making the first project in the grid bigger than the rest - showcase kind of thing */
 .card:first-child {
   width: 95%;
 }
 
-/* Styling for the header of the card, making the position sit on the card border */
+/* styling for the header of the card */
 .card-header {
   position: relative;
   margin: 1rem 0;
@@ -230,7 +206,6 @@ img {
 
 .link-details {
   color: var(--light-grey);
-  ;
   display: inline-block;
   padding: 0 1rem;
   font-size: 1.8rem;
@@ -240,12 +215,7 @@ img {
   color: var(--white);
 }
 
-/* Added a transition effect when the cards/card-header loads */
-.card {
-  transition: all 0.5s ease-in-out;
-}
-
-/* Box shadow for when the user hovers over the card/card-header */
+/* box shadow for when the user hovers over the projects */
 .card:hover {
   box-shadow: 0 0 1rem var(--white);
 }
@@ -259,10 +229,6 @@ img {
   font-size: 2.2rem;
 }
 
-.contact-details:first-of-type {
-  margin-left: 5rem;
-}
-
 .contact-details:hover {
   color: var(--blurple)
 }
@@ -272,7 +238,6 @@ img {
 }
 
 /* footer section */
-
 footer {
   border-top: 3px solid var(--blurple);
   color: var(--white);
@@ -282,7 +247,7 @@ footer {
 
 footer p {
   padding: 0.5rem 0px;
-  font-family: 'Azeret Mono', 'Courier New', Courier, monospace;
+  font-family: var(--monospace);
   font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
@@ -295,8 +260,16 @@ footer p {
   html {
     font-size: 55%;
   }
-  .card {
-      justify-content: space-between;
+
+  .hero-banner {
+    height: max-content;
+    text-align: right;
+    padding: 6rem 5rem 5rem 5rem;
+  }
+
+  .hero-img img {
+    max-width: 20rem;
+    height: auto;
   }
 }
 
@@ -306,15 +279,14 @@ footer p {
   }
 
   .nav-title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 0.5rem;
   }
   
   .nav-list a {
     display: block;
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 
   .hero-banner {
@@ -322,8 +294,6 @@ footer p {
     height: max-content;
     justify-content: center;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 0 5rem 5rem 5rem;
   }
 
@@ -340,6 +310,6 @@ footer p {
   }
 
   .card {
-    width: 98%;
+    width: 95%;
   }
 }

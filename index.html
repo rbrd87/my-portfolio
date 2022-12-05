@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" />
+  <!-- used an icon library for the little icons on the github links and contact links-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" />
-
   <title>Rochelle Bradley | Frontend Web Developer</title>
 </head>
 
@@ -35,6 +35,7 @@
   <!-- hero banner -->
   <section class="hero-banner">
     <div class="hero-img">
+      <!-- ensuring all images have alt txt for accessibility -->
       <img src="assets/images/profile-pic.jpeg" alt="picture of rochelle bradley" class="profile-pic">
     </div>
     <div class="hero-text">
@@ -49,8 +50,10 @@
     <!-- about me -->
     <section id="about-section" class="page-section">
       <div class="container">
-        <h4 class="section-header">About <span class="blurple-text">me</span></h4>
+        <!-- created to ensure the navbar doesn't cover the section header -->
         <a class="anchor" name="about"></a>
+        <!-- used the span tag to add colour to one word in the header -->
+        <h4 class="section-header">About <span class="blurple-text">me</span></h4>
       </div>
       <p>By day I am an ISTQB qualified QA Engineer, working in an agile environment as part of a fantastic development
         team.
@@ -72,13 +75,15 @@
       <!-- projects grid -->
       <section class="card-grid">
         <section class="card">
-          <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" target="_blank"
-            title="horiseon deployed page"><img src="assets/images/horiseon-homepage-screenshot.jpg"
-              alt="horiseon website screenshot"></a>
+          <!-- ensure all links have titles so people can hover and see where the link takes them -->
+          <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" target="_blank" title="horiseon deployed page"> <!-- target="_blank" opens link in new tab -->
+            <img src="assets/images/horiseon-homepage-screenshot.jpg" alt="horiseon website screenshot">
+          </a>
           <h4 class="card-header">Horiseon refactor - Bootcamp week 1 challenge</h4>
           <div class="github-links">
+            <!-- no title used in these links as used labels instead -->
             <a href="https://github.com/rbrd87/bootcamp-week-1-challenge" target="_blank" class="link-details">
-              <i class="mdi mdi-github"></i> GitHub Repo
+              <i class="mdi mdi-github"></i> GitHub Repo <!-- used the imported icons -->
             </a>
             <a href="https://rbrd87.github.io/bootcamp-week-1-challenge/" target="_blank" class="link-details">
               <i class="mdi mdi-application-brackets-outline"></i> Deployed Site
@@ -86,8 +91,9 @@
           </div>
         </section>
         <section class="card">
-          <a href="https://rbrd87.github.io/mini-project-css-cheat-sheet/" target="_blank"><img
-              src="assets/images/cheatsheet.jpg" alt="css cheatsheet screenshot"></a>
+          <a href="https://rbrd87.github.io/mini-project-css-cheat-sheet/" target="_blank">
+            <img src="assets/images/cheatsheet.jpg" alt="css cheatsheet screenshot">
+          </a>
           <h4 class="card-header">CSS Cheatsheet</h4>
           <div class="github-links">
             <a href="https://github.com/rbrd87/mini-project-css-cheat-sheet" target="_blank" class="link-details">
@@ -99,8 +105,9 @@
           </div>
         </section>
         <section class="card">
-          <a href="https://rbrd87.github.io/css-grids-activity/" target="_blank"><img src="assets/images/css-grid.jpg"
-              alt="furniture website screenshot"></a>
+          <a href="https://rbrd87.github.io/css-grids-activity/" target="_blank">
+            <img src="assets/images/css-grid.jpg" alt="furniture website screenshot">
+          </a>
           <h4 class="card-header">Furniture store homepage</h4>
           <div class="github-links">
             <a href="https://github.com/rbrd87/css-grids-activity" target="_blank" class="link-details">
@@ -112,8 +119,9 @@
           </div>
         </section>
         <section class="card">
-          <a href="https://rbrd87.github.io/jakes-eatery/" target="_blank"><img src="assets/images/jakes-eatery.jpg"
-              alt="jakes eatery website screenshot"></a>
+          <a href="https://rbrd87.github.io/jakes-eatery/" target="_blank">
+            <img src="assets/images/jakes-eatery.jpg" alt="jakes eatery website screenshot">
+          </a>
           <h4 class="card-header">Jakes Eatery - Online menu</h4>
           <div class="github-links">
             <a href="https://github.com/rbrd87/jakes-eatery" target="_blank" class="link-details">
@@ -125,8 +133,9 @@
           </div>
         </section>
         <section class="card">
-          <a href="https://rbrd87.github.io/landing-page/" target="_blank"><img src="assets/images/landing-page.jpg"
-              alt="landing page screenshot"></a>
+          <a href="https://rbrd87.github.io/landing-page/" target="_blank">
+            <img src="assets/images/landing-page.jpg" alt="landing page screenshot">
+          </a>
           <h4 class="card-header">Basic landing page</h4>
           <div class="github-links">
             <a href="https://github.com/rbrd87/landing-page" target="_blank" class="link-details">
@@ -146,6 +155,7 @@
           <p>If you want to find out more or collaborate on a project together get in touch!</p>
           <a class="anchor" name="projects"></a>
         </div>
+        <!-- links to my socials using the icons imported -->
         <div class="contact-links">
           <a href="https://twitter.com/rochellebradley" target="_blank" class="contact-details">
             <i class="mdi mdi-twitter"></i> Twitter</a>
@@ -156,7 +166,9 @@
         </div>
       </section>
   </main>
+  <!-- footer section -->
   <footer>
+    <!-- little message in the footer -->
     <p id="made-by">Made with 🤍 by Rochelle Bradley</p>
   </footer>
 </body>
