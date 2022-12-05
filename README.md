@@ -67,7 +67,7 @@ Below is a snippet of HTML code, where you can see how I created my projects gri
 
 ![screenshot of html code](assets/screenshots/html-snippet.jpg)
 
-Finally, here are some screenshots of my CSS code. 
+Here are some screenshots of my CSS code. 
 
 This one highlights my use of 'rem' values for the font-sizing throughout my site.
 
@@ -75,7 +75,11 @@ This one highlights my use of 'rem' values for the font-sizing throughout my sit
 
 And here is one showing how I used CSS to create the grid and used the `:first-child` CSS selector to make the first box in the grid bigger than the rest.
 
-![snipepd of css code highlighting use of flexbox and css selectors](assets/screenshots/card-design-first-child.jpg)
+![snippet of css code highlighting use of flexbox and css selectors](assets/screenshots/card-design-first-child.jpg)
+
+Finally, here is a wireframe I created in Balsamiq - a tool I have used for a number of years now in my System Analyst/Test Engineer roles.
+
+![screenshot of my wireframe](assets/screenshots/wireframe.jpg)
 
 ## Credits
 
