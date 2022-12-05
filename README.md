@@ -71,7 +71,7 @@ Finally, here are some screenshots of my CSS code.
 
 This one highlights my use of 'rem' values for the font-sizing throughout my site.
 
-![snippet of css code highlight rem values](assets/screenshots/css-rem-calcs.jpgs/)
+![snippet of css code highlight rem values](assets/screenshots/css-rem-calcs.jpg)
 
 And here is one showing how I used CSS to create the grid and used the `:first-child` CSS selector to make the first box in the grid bigger than the rest.
 
