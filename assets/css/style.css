@@ -80,7 +80,7 @@ img {
   width: 100%;
   background: var(--background-dark);
   border-bottom: 2px solid var(--blurple);
-  z-index: 1;
+  z-index: 10; /* so that the navbar always stays ontop of the content */
 }
 
 .nav-title {
@@ -201,7 +201,7 @@ img {
   text-align: center;
   padding: 0 1rem 1rem 1rem;
   margin: 2rem 0.5rem;
-  min-width: 100px;
+  min-width: 350px;
   width: 45%;
   background-color: var(--dark-grey);
 }
@@ -259,6 +259,10 @@ img {
   font-size: 2.2rem;
 }
 
+.contact-details:first-of-type {
+  margin-left: 5rem;
+}
+
 .contact-details:hover {
   color: var(--blurple)
 }
@@ -280,4 +284,58 @@ footer p {
   text-transform: uppercase;
   color: var(--white);
   letter-spacing: 0.2rem;
+}
+
+/* Media Queries - so the site is responsive to smaller screens */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+  .card {
+      justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .nav-list a {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+  .hero-banner {
+    display: block;
+    height: max-content;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5rem 5rem 5rem;
+  }
+
+  .hero-img img {
+    margin: 10rem auto -3rem auto;
+    width: 50%;
+    max-width: 20rem;
+    height: 50%;
+  }
+
+  .hero-text p {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 98%;
+  }
 }
