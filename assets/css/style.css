@@ -80,7 +80,7 @@ img {
   width: 100%;
   background: var(--background-dark);
   border-bottom: 2px solid var(--blurple);
-  z-index: 10; /* so that the navbar always stays ontop of the content */
+  z-index: 100; /* so that the navbar always stays ontop of the content */
 }
 
 .nav-title {
@@ -265,6 +265,10 @@ img {
 
 .contact-details:hover {
   color: var(--blurple)
+}
+
+.contact-links {
+  margin: 0 5rem ;
 }
 
 /* footer section */
