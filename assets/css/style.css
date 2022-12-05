@@ -93,7 +93,7 @@ a {
   align-items: center;
   text-align: right;
   background: var(--background-dark);
-  background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 1)), url("../images/geometric-background.jpg");
+  background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 1)), url("../images/geometric-background.jpg"); /* added an overlay to my background image */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10rem;
@@ -101,11 +101,12 @@ a {
   margin: 0 auto;
 }
 
-.hero-text {
-  margin-top: 7rem;
+.hero-text h2 {
+  font-size: 4rem;
 }
 
 .hero-text h3 {
+  padding-top: 1rem;
   color: var(--light-grey);
 }
 
@@ -116,7 +117,6 @@ a {
 }
 
 .hero-img img {
-  margin-top: 7rem;
   max-width: 20rem; /* stops the image getting too big */
   height: auto;
   border-radius: 50%;
@@ -285,7 +285,6 @@ footer p {
   }
   
   .nav-list a {
-    display: block;
     padding: 2rem;
   }
 
