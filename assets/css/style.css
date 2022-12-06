@@ -65,11 +65,23 @@ a {
   z-index: 10; /* so that the navbar always stays ontop of the content */
 }
 
+.nav-icon-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.nav-icon-area img {
+  max-width: 40px;
+  height: 40px;
+}
+
 .nav-title {
   font-family: var(--monospace);
   font-size: 5rem;
   font-weight: 700;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav-list {
