@@ -241,19 +241,20 @@ a {
 
 /* contact section */
 
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .contact-details {
   color: var(--white);
-  display: inline-block;
   padding: 5rem 5rem 5rem 0;
   font-size: 2.2rem;
 }
 
 .contact-details:hover {
   color: var(--blurple)
-}
-
-.contact-links {
-  margin: 0 5rem ;
 }
 
 /* footer section */
@@ -277,7 +278,7 @@ footer p {
 /* Media Queries - so the site is responsive to smaller screens */
 @media screen and (max-width: 992px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 
   .hero-banner {
@@ -293,14 +294,13 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-
   .nav-title {
     font-size: 4rem;
-    font-weight: 700;
-    margin-top: 0.5rem;
+  }
+  
+  .nav-icon-area img {
+    max-width: 32px;
+    height: 32px;
   }
 
   .hero-banner, .hero-text, .hero-img {
@@ -332,5 +332,9 @@ footer p {
 
   .card {
     width: 95%;
+  }
+
+  .contact-links {
+    justify-content: center;
   }
 }
