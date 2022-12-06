@@ -213,25 +213,12 @@ a {
 
 /* styling for the header of the card */
 .card-header {
-  position: relative;
-  margin: 1rem 0;
-  z-index: 1;
   color: var(--white);
   border-bottom: 2px solid var(--blurple);
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
   text-align: center;
   width: fit-content;
-}
-
-.link-details {
-  color: var(--light-grey);
-  display: inline-block;
-  padding: 0 1rem;
-  font-size: 1.8rem;
-}
-
-.link-details:hover {
-  color: var(--white);
+  font-size: 2.5rem;
 }
 
 /* box shadow for when the user hovers over the projects */
@@ -239,8 +226,18 @@ a {
   box-shadow: 0 0 1rem var(--white);
 }
 
-/* contact section */
+.link-details {
+  color: var(--light-grey);
+  display: inline-block;
+  padding: 1rem 1rem 0 1rem;
+  font-size: 1.8rem;
+}
 
+.link-details:hover {
+  color: var(--white);
+}
+
+/* contact section */
 .contact-links {
   display: flex;
   flex-direction: row;
@@ -290,6 +287,10 @@ footer p {
   .hero-img img {
     max-width: 20rem;
     height: auto;
+  }
+
+  .card-header {
+    font-size: 2.2rem;
   }
 }
 
