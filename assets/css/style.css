@@ -53,7 +53,9 @@ a {
 /* nav */
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: fixed; /* keeps the navbar at the top as you scroll */
   top: 0;
   left: 0;
@@ -72,13 +74,13 @@ a {
 
 .nav-list {
   display: flex;
+  flex-direction: row;
   margin-right: 2rem;
+  font-size: 2rem;
 }
 
 .nav-list a {
-  display: block;
-  font-size: 2rem;
-  padding: 2rem;
+  padding-right: 2rem;
 }
 
 .nav-list a:hover {
@@ -88,17 +90,22 @@ a {
 /* hero section */
 .hero-banner {
   display: flex;
+  flex-direction: row;
   height: 50vh;
   justify-content: space-around;
   align-items: center;
-  text-align: right;
   background: var(--background-dark);
   background: linear-gradient(rgba(41, 40, 45, 0.8), rgba(21, 20, 24, 1)), url("../images/geometric-background.jpg"); /* added an overlay to my background image */
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 10rem;
   max-width: 200rem; /* stops the banner stretching too far on ultrawide monitors like mine */
   margin: 0 auto;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 
 .hero-text h2 {
@@ -283,28 +290,31 @@ footer p {
     font-weight: 700;
     margin-top: 0.5rem;
   }
-  
-  .nav-list a {
-    padding: 2rem;
+
+  .hero-banner, .hero-text, .hero-img {
+    display: flex;
+    flex-direction: column;
   }
 
   .hero-banner {
-    display: block;
     height: max-content;
     justify-content: center;
-    text-align: center;
     padding: 0 5rem 5rem 5rem;
   }
 
+  .hero-text {
+    text-align: center;
+  }  
+
   .hero-img img {
     margin: 10rem auto 2rem auto;
-    width: 50%;
+    width: 70%;
     max-width: 20rem;
-    height: 50%;
+    height: 70%;
   }
 
   .hero-text p {
-    max-width: fit-content;
+    max-width: 30rem;
     margin: 0 auto;
   }
 
