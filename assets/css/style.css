@@ -50,10 +50,18 @@ a {
   font-weight: 500;
 }
 
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 /* nav */
 .navbar {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed; /* keeps the navbar at the top as you scroll */
@@ -66,8 +74,6 @@ a {
 }
 
 .nav-icon-area {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   margin-left: 2rem;
 }
@@ -85,8 +91,6 @@ a {
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: row;
   margin-right: 2rem;
   font-size: 2rem;
 }
@@ -101,8 +105,6 @@ a {
 
 /* hero section */
 .hero-banner {
-  display: flex;
-  flex-direction: row;
   height: 50vh;
   justify-content: space-around;
   align-items: center;
@@ -115,8 +117,6 @@ a {
 }
 
 .hero-text {
-  display: flex;
-  flex-direction: column;
   text-align: right;
 }
 
@@ -182,29 +182,26 @@ a {
 
 /* portfolio grid */
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 0 1rem 1rem 1rem;
   margin: 2rem 0.5rem;
   min-width: 350px;
   width: 45%;
+  border-radius: 1.5rem;
   background-color: var(--dark-grey);
   transition: all 0.5s ease-in-out; /* Added a transition effect when the cards/card-header loads */
 }
 
 .card img {
-  padding: 1rem 0 0 0;
+  margin-top: 1rem;
   width: 100%;
   height: auto;
+  border-radius: 1.5rem;
 }
  /* making the first project in the grid bigger than the rest - showcase kind of thing */
 .card:first-child {
@@ -239,8 +236,6 @@ a {
 
 /* contact section */
 .contact-links {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -256,14 +251,15 @@ a {
 
 /* footer section */
 footer {
+  justify-content: space-between;
+  align-items: center;
   border-top: 3px solid var(--blurple);
   color: var(--white);
-  padding: 3rem;
   background: var(--dark-grey);
 }
 
 footer p {
-  padding: 0.5rem 0px;
+  padding: 4rem;
   font-family: var(--monospace);
   font-size: 1.2rem;
   text-align: center;
@@ -337,5 +333,14 @@ footer p {
 
   .contact-links {
     justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer p {
+    padding: 2rem 0;
   }
 }
